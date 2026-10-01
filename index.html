@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Shaxsiy profil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <form id="profileForm" class="form-box" autocomplete="off">
+      <input type="text" id="nameInput" placeholder="Ism" autocomplete="off" required>
+      <input type="text" id="surnameInput" placeholder="Familiya" autocomplete="off" required>
+      <!-- Yosh uchun type="text" qilindi -->
+      <input type="text" id="ageInput" placeholder="Yosh" autocomplete="off" required>
+      <button type="submit" id="saveBtn">Saqlash</button>
+    </form>
+
+    <div class="id-card">
+      <h3 class="card-title">ID Karta: <span id="cardId">#000000</span></h3>
+      <div class="card-content">
+        <div class="avatar">
+          <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="User Avatar">
+        </div>
+        <div class="info">
+          <p><strong>Ism:</strong> <span id="cardName">[Input Data]</span></p>
+          <p><strong>Familiya:</strong> <span id="cardSurname">[Input Data]</span></p>
+          <p><strong>Yosh:</strong> <span id="cardAge">[Input Data]</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
